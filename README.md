@@ -1,2 +1,2 @@
-# For Live Demo Click
-[Link text Here](https://getyourweather1.netlify.app/)
+# Weather-App Version 2
+[Live Demo](https://getyourweather1.netlify.app/)
