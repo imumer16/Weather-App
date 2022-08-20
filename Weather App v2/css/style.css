@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #b9aaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #b9aaaaa1;
+}
+/* start side panel */
+.panal1 {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2a2a2a;
+  box-shadow: 0px 0px 20px 0px #b9aaaa;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  width: 75%;
+  margin: 30px 0px 30px 0px;
+}
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.5rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  color: #9b9b9b;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
+  border-image: #9b9b9b;
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+.weather {
+  font-family: "Poppins", sans-serif;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  padding: auto;
+}
+
+.temp {
+  font-size: 4rem;
+}
+.time,
+.humidity,
+.wind,
+.description {
+  font-size: 1.2rem;
+}
+
+.img-box {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #262626, #2d2d2d);
+  box-shadow: -5px -5px 0px #212121, 5px 5px 0px #333333;
+}
+/*end side panel */
+
+.container2 {
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 120px;
+  background-color: #1d1313a1;
+  border-radius: 10px;
+}
+.box img {
+  margin: 0px 13px;
+  width: 80px;
+  height: 80px;
+}
+.box div {
+  position: relative;
+  font-size: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #9e9e9e;
+}
+
+.panal2 {
+  position: relative;
+  left: 25%;
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.panal2 h2 {
+  margin: 25px 0px 25px 0px;
+  color: #2a2a2a;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  background-color: #2a2a2a;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container1 .box {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 110px;
+  height: 130px;
+  margin: 10px;
+  background-color: #1d1313a1;
+  border-radius: 10px;
+}
+
+.tem {
+  position: relative;
+  bottom: 10px;
+}
+
+.time,
+.day {
+  position: relative;
+  top: 10px;
+}
+
+footer {
+  border-radius: 20px;
+  background-color: #000000d5;
+  font-family: Gabriola, sans-serif;
+  color: white;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0px 10px 0px 10px;
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px #b9aaaaa1;
+}
+
+/* For Desktop */
+@media screen and (max-width: 1200px) {
+  .panal2 h2 {
+    margin: 10px 0px 10px 0px;
+  }
+  .container2 {
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  .img-box {
+    width: 200px;
+    height: 200px;
+  }
+  .img-box img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .temp {
+    font-size: 1.2rem;
+  }
+}
+/* For Laptop */
+@media screen and (max-width: 992px) {
+  .panal1 {
+    position: relative;
+  }
+  .panal2 {
+    left: 0px;
+  }
+  body {
+    display: block;
+  }
+  .panal1,
+  .panal2 {
+    width: 100%;
+  }
+
+  .temp {
+    font-size: 4rem;
+  }
+  .time,
+  .humidity,
+  .wind,
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .img-box {
+    width: 300px;
+    height: 300px;
+  }
+  .img-box img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .container2 {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .container1 .box {
+    margin: 5px;
+  }
+}
+
+/* For Tablet */
+@media only screen and (max-width: 768px) {
+  .form__group {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .container2 {
+    grid-template-columns: auto auto auto;
+  }
+
+  .container1 {
+    grid-template-columns: auto auto;
+  }
+  .container1 .box,
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+  .box img {
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+  }
+  .temp {
+    font-size: 4rem;
+  }
+  .time,
+  .humidity,
+  .wind,
+  .description {
+    font-size: 1rem;
+  }
+
+  .img-box {
+    width: 200px;
+    height: 200px;
+  }
+  .img-box img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* For Moblie */
+@media only screen and (max-width: 600px) {
+  .form__group {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .container2 {
+    grid-template-columns: auto auto;
+  }
+
+  .container1 {
+    grid-template-columns: auto auto;
+  }
+  .container1 .box,
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+  .box img {
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+  }
+  .temp {
+    font-size: 4rem;
+  }
+  .time,
+  .humidity,
+  .wind,
+  .description,
+  footer {
+    font-size: 1rem;
+  }
+
+  .img-box {
+    width: 200px;
+    height: 200px;
+  }
+  .img-box img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .form__group {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .container2 {
+    grid-template-columns: auto;
+  }
+
+  .container1 {
+    grid-template-columns: auto;
+  }
+
+  .box img {
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+  }
+  .temp {
+    font-size: 2.5rem;
+  }
+  .time,
+  .humidity,
+  .wind,
+  .description,
+  .city {
+    font-size: 0.8rem;
+  }
+
+  .img-box {
+    width: 200px;
+    height: 200px;
+  }
+  .img-box img {
+    width: 150px;
+    height: 150px;
+  }
+}
