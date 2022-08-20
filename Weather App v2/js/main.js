@@ -1,6 +1,6 @@
 let Weather = {
   // Api key
-  apiKey: "7960b8508bd356d405143b43bf71d6a8",
+  apiKey: "Enter Your API Key",
 
   // weather current location
   fetchCurrentWeather: function (lat, lon) {
