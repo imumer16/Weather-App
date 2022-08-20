@@ -17,7 +17,7 @@ function checkTime(i) {
 
 
 let Weather={
-    apiKet:"7960b8508bd356d405143b43bf71d6a8",
+    apiKet:"Enter Your API Key",
     // weather current location
     fetchCurrentWeather: function(position){
         const lat=position.coords.latitude;
@@ -26,7 +26,8 @@ let Weather={
             +lat
             +"&lon="
             +lon
-            +"&units=metric&appid=7960b8508bd356d405143b43bf71d6a8"
+            +"&units=metric&appid="
+             +this.apiKet
         )
         .then((response)=>response.json())
         .then((data) => {
