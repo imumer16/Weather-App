@@ -193,6 +193,48 @@ lang	optional	Language code.|
 ### Fields in API response
 
 
+| Response | Description                |
+| :-------- | :------------------------- |
+| `city` | |
+| `city.id` | City ID. Please note that built-in geocoder functionality has been deprecated. |
+| `city.name` | City name. Please note that built-in geocoder functionality has been deprecated.|
+| `city.coord` | |
+| `city.coord.lat` | City geo location, latitude |
+| `city.coord.lon` | City geo location, longitude |
+| `country` | Country code (GB, JP etc.). Please note that built-in geocoder functionality has been deprecated. |
+| `population` | Internal parameter |
+| `timezone` | Shift in seconds from UTC |
+| `cod` | Internal parameter |
+| `message` | Internal parameter |
+| `cnt` |  A number of days returned in the API response |
+| `list` | |
+| `list.dt` | Time of data forecasted |
+| `list.temp` |  |
+| `list.temp.day` | Day temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.temp.min` |  Min daily temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.temp.max` |  Max daily temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.temp.night` | Night temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.temp.eve` | Evening temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.temp.morn` | Morning temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.feels_like` | |
+| `list.feels_like.day` | Day temperature.This temperature parameter accounts for the human perception of weather. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.feels_like.night` | Night temperature.This temperature parameter accounts for the human perception of weather. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.|
+| `list.feels_like.eve` | Evening temperature.This temperature parameter accounts for the human perception of weather. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.feels_like.morn` | Morning temperature. This temperature parameter accounts for the human perception of weather. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. |
+| `list.pressure` |Atmospheric pressure on the sea level, hPa |
+| `list.humidity` |  Humidity, % |
+| `list.weather` |  (more info Weather condition codes) |
+| `list.weather.id` | Weather condition id |
+| `list.weather.main` | Group of weather parameters (Rain, Snow, Extreme etc.) |
+| `list.weather.description` | Weather condition within the group. You can get the output in your language |
+| `list.weather.icon` |  Weather icon id |
+| `list.speed` | Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour. |
+| `list.deg` | Wind direction, degrees (meteorological) |
+| `list.gust` | list.gust Wind gust. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour. |
+| `list.clouds` | Cloudiness, %|
+| `list.rain` | Precipitation volume, mm |
+| `list.snow` |  Snow volume, mm |
+| `list.pop` | Probability of precipitation. The values of the parameter vary between 0 and 1, where 0 is equal to 0%, 1 is equal to 100% |
 
 </br>
 
