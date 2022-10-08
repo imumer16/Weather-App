@@ -1,6 +1,6 @@
 let Weather = {
   // Api key
-  apiKey: "7960b8508bd356d405143b43bf71d6a8",
+  apiKey: "Enter YOUR API KEY",
 
   // weather current location
   fetchCurrentWeather: function (lat, lon) {
@@ -43,28 +43,6 @@ let Weather = {
   // daily data
   change_daily: function (daily) {
     // console.log(daily);
-
-    // const d11 = document.getElementsByClassName("container1");
-    // // d1.innerHTML = "";
-    // for (let index = 0; index <= 8; index++) {
-    //   const para = document.createElement("p");
-    //   para.className = "box";
-    //   para.innerHTML = `
-    //     <div class="day">${new Date(daily[index].dt * 1000).toLocaleString(
-    //       "en-US",
-    //       {
-    //         weekday: "long",
-    //       }
-    //     )} </div>
-    //     <img class="image"src ="../assets/"${
-    //       daily[index].weather[index].icon
-    //     }".png">
-    //     <div class="Max-Temp">${"Max: " + daily[index].temp.max + "°C"} </div>
-    //     <div class="Min-Temp">${"Min: " + daily[index].temp.min + "°C"} </div>
-    //  `;
-
-    //   d11.appendChild(para);
-    // }
 
     document.getElementById("d1").innerText = new Date(
       daily[0].dt * 1000
@@ -373,10 +351,7 @@ let Weather = {
   },
 };
 
-//Event "Click Search button"
-// document.querySelector(".button1").addEventListener("click", function () {
-//   Weather.search();
-// });
+
 //Event "Enter key"
 document.querySelector(".form__field").addEventListener("keyup", (event) => {
   if (event.keyCode === 13) {
