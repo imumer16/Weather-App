@@ -242,7 +242,8 @@ lang	optional	Language code.|
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://user-images.githubusercontent.com/84404257/194690351-a3654a27-c70a-4cfe-a549-2dc96df12bb6.png)
+
 
 
 ## Contributing
