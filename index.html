@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="panal1">
+      <div class="form__group field">
+        <input
+          type="input"
+          class="form__field"
+          placeholder="Location"
+          name="name"
+          id="name"
+          required
+        />
+        <label for="name" class="form__label">Location</label>
+      </div>
+
+      <!-- Side panal-->
+
+      <h2 class="city">Select Location</h2>
+
+      <div class="img-box">
+        <img
+          src="assets/image.png"
+          width="200px"
+          height="200px"
+          alt="Image"
+          class="icon"
+        />
+        <div class="description"></div>
+      </div>
+
+      <div class="temp"></div>
+
+      <div class="time"></div>
+
+      <div class="humidity"></div>
+
+      <div class="wind"></div>
+    </div>
+
+    <!-- Daily data -->
+
+    <div class="panal2">
+      <h1>Daily Weather for 8 days</h1>
+
+      <div class="container1">
+        <div class="box">
+          <div class="day" id="d1"></div>
+          <img src="assets/image.png" alt="Image" id="b1" />
+          <div class="tem" id="Max-T1"></div>
+          <div class="tem" id="Min-T1"></div>
+        </div>
+
+        <div class="box">
+          <div class="day" id="d2"></div>
+          <img src="assets/image.png" alt="Image" id="b2" />
+          <div class="tem" id="Max-T2"></div>
+          <div class="tem" id="Min-T2"></div>
+        </div>
+
+        <div class="box">
+          <div class="day" id="d3"></div>
+          <img src="assets/image.png" alt="Image" id="b3" />
+          <div class="tem" id="Max-T3"></div>
+          <div class="tem" id="Min-T3"></div>
+        </div>
+
+        <div class="box">
+          <div class="day" id="d4"></div>
+          <img src="assets/image.png" alt="Image" id="b4" />
+          <div class="tem" id="Max-T4"></div>
+          <div class="tem" id="Min-T4"></div>
+        </div>
+
+        <div class="box">
+          <div class="day" id="d5"></div>
+          <img src="assets/image.png" alt="Image" id="b5" />
+          <div class="tem" id="Max-T5"></div>
+          <div class="tem" id="Min-T5"></div>
+        </div>
+
+        <div class="box">
+          <div class="day" id="d6"></div>
+          <img src="assets/image.png" alt="Image" id="b6" />
+          <div class="tem" id="Max-T6"></div>
+          <div class="tem" id="Min-T6"></div>
+        </div>
+
+        <div class="box">
+          <div class="day" id="d7"></div>
+          <img src="assets/image.png" alt="Image" id="b7" />
+          <div class="tem" id="Max-T7"></div>
+          <div class="tem" id="Min-T7"></div>
+        </div>
+
+        <div class="box">
+          <div class="day" id="d8"></div>
+          <img src="assets/image.png" alt="Image" id="b8" />
+          <div class="tem" id="Max-T8"></div>
+          <div class="tem" id="Min-T8"></div>
+        </div>
+      </div>
+
+      <!-- Hourly data -->
+      <h1>Hourly Weather for 24 hours</h1>
+      <div class="container2">
+        <div class="box">
+          <div class="time" id="time1"></div>
+          <img src="assets/image.png" alt="Image" id="box1" />
+          <div class="tem" id="t1"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time2"></div>
+
+          <img src="assets/image.png" alt="Image" id="box2" />
+          <div class="tem" id="t2"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time3"></div>
+          <img src="assets/image.png" alt="Image" id="box3" />
+          <div class="tem" id="t3"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time4"></div>
+          <img src="assets/image.png" alt="Image" id="box4" />
+          <div class="tem" id="t4"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time5"></div>
+          <img src="assets/image.png" alt="Image" id="box5" />
+          <div class="tem" id="t5"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time6"></div>
+          <img src="assets/image.png" alt="Image" id="box6" />
+          <div class="tem" id="t6"></div>
+        </div>
+
+        <div class="box">
+          <div class="time" id="time7"></div>
+          <img src="assets/image.png" alt="Image" id="box7" />
+          <div class="tem" id="t7"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time8"></div>
+          <img src="assets/image.png" alt="Image" id="box8" />
+          <div class="tem" id="t8"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time9"></div>
+          <img src="assets/image.png" alt="Image" id="box9" />
+          <div class="tem" id="t9"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time10"></div>
+          <img src="assets/image.png" alt="Image" id="box10" />
+          <div class="tem" id="t10"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time11"></div>
+          <img src="assets/image.png" alt="Image" id="box11" />
+          <div class="tem" id="t11"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time12"></div>
+          <img src="assets/image.png" alt="Image" id="box12" />
+          <div class="tem" id="t12"></div>
+        </div>
+
+        <div class="box">
+          <div class="time" id="time13"></div>
+          <img src="assets/image.png" alt="Image" id="box13" />
+          <div class="tem" id="t13"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time14"></div>
+          <img src="assets/image.png" alt="Image" id="box14" />
+          <div class="tem" id="t14"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time15"></div>
+          <img src="assets/image.png" alt="Image" id="box15" />
+          <div class="tem" id="t15"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time16"></div>
+          <img src="assets/image.png" alt="Image" id="box16" />
+          <div class="tem" id="t16"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time17"></div>
+          <img src="assets/image.png" alt="Image" id="box17" />
+          <div class="tem" id="t17"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time18"></div>
+          <img src="assets/image.png" alt="Image" id="box18" />
+          <div class="tem" id="t18"></div>
+        </div>
+
+        <div class="box">
+          <div class="time" id="time19"></div>
+          <img src="assets/image.png" alt="Image" id="box19" />
+          <div class="tem" id="t19"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time20"></div>
+          <img src="assets/image.png" alt="Image" id="box20" />
+          <div class="tem" id="t20"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time21"></div>
+          <img src="assets/image.png" alt="Image" id="box21" />
+          <div class="tem" id="t21"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time22"></div>
+          <img src="assets/image.png" alt="Image" id="box22" />
+          <div class="tem" id="t22"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time23"></div>
+          <img src="assets/image.png" alt="Image" id="box23" />
+          <div class="tem" id="t23"></div>
+        </div>
+        <div class="box">
+          <div class="time" id="time24"></div>
+          <img src="assets/image.png" alt="Image" id="box24" />
+          <div class="tem" id="t24"></div>
+        </div>
+      </div>
+      <footer href="https://github.com/imumer16">
+        Made with ♥ by Umer Ahmed.
+      </footer>
+    </div>
+  </body>
+</html>
