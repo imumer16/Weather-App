@@ -26,8 +26,10 @@ Clone the project
 
 
 ## Demo
+```bash
+   https://getyourweather1.netlify.app/
+```
 
-https://getyourweather1.netlify.app/
 
 
 ## API Reference
