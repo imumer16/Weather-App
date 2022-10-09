@@ -12,7 +12,7 @@ The weather app also provides atmospheric pressure, weather conditions, visibili
 
 Clone the project
 
-```bash
+```git
   git clone https://github.com/imumer16/Weather-App.git
 ```
 
@@ -26,7 +26,7 @@ Clone the project
 
 
 ## Demo
-```bash
+```link
    https://getyourweather1.netlify.app/
 ```
 
@@ -36,7 +36,7 @@ Clone the project
 
 #### Get all items
 
-```http
+```js
   api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}
 ```
 
@@ -62,7 +62,7 @@ Clone the project
 
 ## Example of API reponse
 
-```
+```js
 {
   "city": {
     "id": 3163858,
